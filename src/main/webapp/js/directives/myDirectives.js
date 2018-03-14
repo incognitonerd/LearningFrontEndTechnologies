@@ -1,5 +1,5 @@
-app.directive("w3TestDirective", function() {
+app.directive("customDirective", function() {
     return {
-        template : "<h1>Made by a directive!</h1>"
+        template : "<h1>Custom Directive!</h1>"
     };
 });

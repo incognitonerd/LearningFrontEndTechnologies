@@ -1,7 +1,7 @@
 app.controller("myCtrl", function($scope) {
-	$scope.fName = "John";
-	$scope.lName = "Doe";
+	$scope.fName = "Angular";
+	$scope.lName = "Rocks";
 	$scope.quantity=1;
 	$scope.price=5;
-	$scope.names=['Jani','Hege','Kai', 'Zay']
+	$scope.sports=['basketball','football','baseball','soccer']
 });
