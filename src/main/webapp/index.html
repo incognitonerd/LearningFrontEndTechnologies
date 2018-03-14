@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<body>
+
+	<div ng-app="myApp" ng-controller="myCtrl">
+		{{ fName + " " + lName }}
+
+
+		<p>Input something in the input box:</p>
+		<p>
+			Name: <input type="text" ng-model="firstName">
+		</p>
+		<p>You wrote: {{ firstName }}</p>
+
+		Quantity: <input type="number" ng-model="quantity"> Price: <input type="number" ng-model="price"> 
+		<br> 
+		Total in dollars: {{ quantity * price }} 
+		<br> 
+		<ul>
+			<li ng-repeat="x in names">{{ x }}</li>
+		</ul>
+	</div>
+
+	<script src="js/modules/myApp.js"></script>
+	<script src="js/controllers/myCtrlrs.js"></script>
+	<script src="js/controllers/myDirectives.js"></script>
+
+</body>
+</html>
